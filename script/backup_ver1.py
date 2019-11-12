@@ -1,6 +1,12 @@
 ## backup
 import os
+import platform
 import time
+import re
+
+osPlatform = re.findall('Windows', platform.platform())[0]
+
+print 'os is %s' %osPlatform
 
 source = [r'E:/my_github/test']
 
